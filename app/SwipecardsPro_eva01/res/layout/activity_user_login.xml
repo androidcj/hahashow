@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res/com.example.swipecardspro_eva01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/launcher_bg"
+    >
+  
+    
+    
+  <LinearLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_centerInParent="true"
+      android:id="@+id/login_root"
+      >
+      
+      <RelativeLayout 
+          android:layout_width="match_parent"
+   		android:layout_height="match_parent" 
+          >
+          
+            <TextView
+    android:id="@+id/username_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="用户名"
+    ></TextView>
+
+        <EditText
+            android:id="@+id/username_value"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/username_text"
+             />
+     
+        
+             <TextView
+    android:id="@+id/userpass_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/username_text"
+    android:layout_marginTop="40dp"
+    android:text="密   码"
+    ></TextView>
+
+        <EditText
+            android:id="@+id/userpass_value"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:password="true"
+           	android:layout_toRightOf="@id/userpass_text"
+           	android:layout_below="@id/username_value"
+             />	
+      </RelativeLayout>
+      
+  </LinearLayout>  
+
+    
+     
+        <com.hahashow.slideunlock.SlideUnlockView
+        android:id="@+id/slideUnlockView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_root"
+        android:layout_centerHorizontal="true"
+        test:slideUnlockBackgroundResource="@drawable/jiesuo_bg"
+        test:slideUnlockBlockResource="@drawable/jiesuo_button" />
+    
+    
+
+    
+    
+</RelativeLayout>
